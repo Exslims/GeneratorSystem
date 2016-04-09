@@ -14,8 +14,8 @@ public class FirstFactory {
     public static void register(Class clazz, BuilderInitializer<? extends Builder> initializer){
         map.put(clazz,initializer);
     }
-    public static String create(Class classType){
-        Builder builder = (Builder) map.get(classType).newInstance();
-        return builder.create();
+    public static String create(Class classAsKey, String someArg){
+        Builder builder = (Builder) map.get(classAsKey).newInstance();
+        return builder.create(someArg);
     }
 }

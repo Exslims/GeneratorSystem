@@ -6,7 +6,7 @@ package builders;
 @RegisterAsBuilder(keyAsClass = Stub.class)
 public class BuilderImpl implements Builder {
     @Override
-    public String create() {
-        return "Hello from: "  + this.getClass().getTypeName();
+    public String create(String someArg) {
+        return "Hello from: "  + this.getClass().getTypeName() + " i created something through: " + someArg;
     }
 }
