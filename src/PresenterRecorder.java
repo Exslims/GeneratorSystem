@@ -15,7 +15,7 @@ public class PresenterRecorder extends Generator {
     @Override
     protected void putClassesToList(List<AsyncDescriptor<?>> list, Class clazz) {
         RegisterAsPresenter annotation = (RegisterAsPresenter)clazz.getAnnotation(RegisterAsPresenter.class);
-        list.add(new AsyncDescriptor<String>(annotation.stringType(),clazz));
+        list.add(new AsyncDescriptor<String>(annotation.keyAsString(),clazz));
     }
 
     @Override

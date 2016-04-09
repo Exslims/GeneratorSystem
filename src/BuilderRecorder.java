@@ -16,7 +16,7 @@ public class BuilderRecorder extends Generator {
     protected void putClassesToList(List<AsyncDescriptor<?>> list, Class clazz) {
         RegisterAsBuilder annotation = (RegisterAsBuilder)clazz.getAnnotation(getDeclaredAnnotation());
         if(annotation != null){
-            list.add(new AsyncDescriptor<Class>(annotation.firstType(),clazz));
+            list.add(new AsyncDescriptor<Class>(annotation.keyAsClass(),clazz));
         }
     }
 

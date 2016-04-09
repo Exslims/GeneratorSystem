@@ -3,7 +3,7 @@ package builders;
 /**
  * Created by Константин on 09.04.2016.
  */
-@RegisterAsPresenter(stringType = "stringKey1")
+@RegisterAsPresenter(keyAsString = "stringKey1")
 public class PresenterImpl implements Presenter {
     @Override
     public String create(String testInfo) {

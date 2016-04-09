@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RegisterAsBuilder {
-    Class<?> firstType();
+    Class<?> keyAsClass();
 }
