@@ -6,13 +6,13 @@ import factory.SecondFactory;
 public class Main {
 
     public static void main(String[] args) {
-        BuilderRecorder firstReg = new BuilderRecorder();
+        Generator firstReg = new BuilderRecorder();
         firstReg.generate();
 
         System.out.println(FirstFactory.create(Stub.class));
         System.out.println(FirstFactory.create(Stub2.class));
 
-        PresenterRecorder secondReg = new PresenterRecorder();
+        Generator secondReg = new PresenterRecorder();
         secondReg.generate();
 
         System.out.println(SecondFactory.create("stringKey1","param1"));

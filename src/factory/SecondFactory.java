@@ -1,6 +1,6 @@
 package factory;
 
-import builders.Presenter;
+import presenters.Presenter;
 import initializers.PresenterInitializer;
 
 import java.util.HashMap;

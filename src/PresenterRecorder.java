@@ -1,7 +1,7 @@
-import builders.RegisterAsPresenter;
-import builders.Presenter;
-import builders.PresenterImpl;
-import builders.PresenterImpl2;
+import presenters.RegisterAsPresenter;
+import presenters.Presenter;
+import presenters.PresenterImpl;
+import presenters.PresenterImpl2;
 import factory.SecondFactory;
 import initializers.PresenterInitializer;
 
